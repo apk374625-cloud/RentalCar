@@ -3,6 +3,9 @@
   const header = document.querySelector('.site-header');
   const menuToggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.nav-menu');
+  const heroVideo = document.querySelector('.hero-video');
+
+  heroVideo?.addEventListener('error', () => heroVideo.classList.add('video-unavailable'));
 
   const setMenu = (open) => {
     menu.classList.toggle('open', open);
